@@ -3,7 +3,7 @@ import '../../src/fixtures/testHooks';
 import { ENV } from "../../src/constants/env.ts";
 
 test.describe('Login functionality', () =>{
-    test('Standart user can login successfully',{tag: ['@smoke']}, async({ inventoryPage, page}) => {
+    test('Standart user can login successfully',{tag: ['@smoke', '@regression']}, async({ inventoryPage, page}) => {
         
         await page.goto('/inventory.html')
         
