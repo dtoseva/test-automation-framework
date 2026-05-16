@@ -24,12 +24,12 @@ jobs:
         STANDARD_USER: ${{ secrets.STANDARD_USER }}
         STANDARD_PASSWORD: ${{ secrets.STANDARD_PASSWORD }}
     - name: Generate Allure report
-      if: ${{ always() }}
+      if: always()
       run: npm run allure:generate
 
-    - uses: actions/upload-artifact@v4
-      if: ${{ always() }}
+    - name: Deploy Allure report to GitHub Pages
+      if: always()
+      uses: peaceiris/actions-gh-pages@v4
       with:
-          name: allure-report
-          path: allure-report/
-          retention-days: 30
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: allure-report
