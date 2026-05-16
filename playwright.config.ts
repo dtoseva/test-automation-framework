@@ -22,7 +22,7 @@ export default defineConfig({
   },
 
   reporter: [
-    ['html'],
+    ['html', { open: 'never' }],
     ['list']
   ],
 
