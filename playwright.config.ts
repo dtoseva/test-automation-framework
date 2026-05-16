@@ -21,9 +21,9 @@ export default defineConfig({
     timeout: 5000,
   },
 
-  reporter: [
-    ['html', { open: 'never' }],
-    ['list']
+  reporter: [    
+    ['list'],
+    ['allure-playwright']
   ],
 
   use: {
