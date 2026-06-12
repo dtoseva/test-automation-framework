@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","606","Validate main components on Inventory page","chromium","2026-06-12","passed","2026-06-12","Inventory components validations","smoke/inventory_components_validations.spec.ts","",""
-"","612","Successful login","chromium","2026-06-12","passed","2026-06-12","Login","smoke/login.spec.ts","",""
-"","747","authenticate","setup","2026-06-12","passed","2026-06-12","","auth.setup.ts","",""
+"","717","Validate main components on Inventory page","chromium","2026-06-12","passed","2026-06-12","Inventory components validations","smoke/inventory_components_validations.spec.ts","",""
+"","819","authenticate","setup","2026-06-12","passed","2026-06-12","","auth.setup.ts","",""
+"","761","Successful login","chromium","2026-06-12","passed","2026-06-12","Login","smoke/login.spec.ts","",""
