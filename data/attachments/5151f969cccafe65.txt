@@ -1,2 +1,0 @@
-ℹ️ Navigating to: /
-❌ Test failed: Locked user
