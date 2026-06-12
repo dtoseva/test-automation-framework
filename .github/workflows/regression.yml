@@ -13,6 +13,8 @@ jobs:
       BASE_URL: ${{ secrets.BASE_URL }}
       STANDARD_USER: ${{ secrets.STANDARD_USER }}
       STANDARD_PASSWORD: ${{ secrets.STANDARD_PASSWORD }}
+      LOCKED_USER: ${{ secrets.LOCKED_USER}}
+      LOCKED_PASSWORD: ${{secrets.LOCKED_PASSWORD}}
 
     steps:
       - uses: actions/checkout@v4
