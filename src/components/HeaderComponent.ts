@@ -1,15 +1,13 @@
-import {Locator, Page} from "@playwright/test";
+import { Locator, Page } from "@playwright/test";
 
-export class HeaderComponents {
-    readonly page: Page;
-    readonly shopingCartLink: Locator;
+export class HeaderComponent {
+    readonly shoppingCartLink: Locator;
     readonly menuButton: Locator;
     readonly pageTitle: Locator;
 
-    constructor(page:Page) {
-        this.page = page;
-        this.shopingCartLink = page.locator('.shopping_cart_link');
+    constructor(page: Page) {
+        this.shoppingCartLink = page.locator('.shopping_cart_link');
         this.menuButton = page.locator('#react-burger-menu-btn');
-        this.pageTitle = page.locator('.title')
+        this.pageTitle = page.locator('.title');
     }
 }

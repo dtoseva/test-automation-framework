@@ -1,19 +1,18 @@
-import { Locator, Page } from "playwright-core";
-import { HeaderComponents } from "../components/HeaderComponent";
+import { Locator, Page } from "@playwright/test";
+import { HeaderComponent } from "../components/HeaderComponent";
 import { BasePage } from "./BasePage";
 
-export class InventoryPage extends BasePage{
-    
+export class InventoryPage extends BasePage {
+
     readonly inventoryItems: Locator;
-    readonly headers: HeaderComponents;    
+    readonly header: HeaderComponent;
     readonly filter: Locator;
-    
-    constructor(page:Page) {
+
+    constructor(page: Page) {
         super(page);
         this.inventoryItems = page.locator('.inventory_item');
-        this.headers = new HeaderComponents(page);
+        this.header = new HeaderComponent(page);
         this.filter = page.locator('.product_sort_container');
-        
     }
 
     async getInventoryItemCount(): Promise<number> {

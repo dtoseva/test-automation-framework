@@ -1,14 +1,12 @@
-import {test as setup} from '@playwright/test';
+import { test as setup } from '@playwright/test';
 import { LoginPage } from '../src/pages/LoginPage';
 
-const authFile = 'playwright/.auth/user.json'
+const authFile = 'playwright/.auth/user.json';
 
-setup('authenticate', async ({page}) =>{
-    const loginPage = new LoginPage(page)
-    await loginPage.open()
-    await loginPage.loginAsStandartUser();
+setup('authenticate', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    await loginPage.open();
+    await loginPage.loginAsStandardUser();
 
-    await page.context().storageState({
-        path: authFile
-    })
-})
+    await page.context().storageState({ path: authFile });
+});

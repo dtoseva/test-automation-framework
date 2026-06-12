@@ -6,4 +6,5 @@ export const ENV = {
   BASE_URL: process.env.BASE_URL!,
   STANDARD_USER: process.env.STANDARD_USER!,
   STANDARD_PASSWORD: process.env.STANDARD_PASSWORD!,
+  LOCKED_USER: process.env.LOCKED_USER!
 };
